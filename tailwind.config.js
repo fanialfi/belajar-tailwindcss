@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Roboto: ["Roboto"],
-        Nunito: ["Nunito", "sans-serif"],
+        oswald:["Oswald","sans-serif"],
+        zeyada:["Zeyada","cursive"],
+        babylonica:['Babylonica', 'cursive'],
       },
     },
   },
