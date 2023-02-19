@@ -5,3 +5,6 @@
 - spacing & sizing
 - typography
 - Colors
+- Background & bolder
+- rounding & shadow
+- effect & filter
