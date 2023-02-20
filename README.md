@@ -11,3 +11,6 @@
 - Background & bolder
 - rounding & shadow
 - effect & filter
+
+3 PseudoClass dan dark mode
+
