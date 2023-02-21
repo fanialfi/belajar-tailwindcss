@@ -14,3 +14,11 @@
 
 3 PseudoClass dan dark mode
 
+- hover, focus, active
+- first, last
+- form state, invalid & valid
+- styling base on parent state (group)
+- styling base on sibling state (peer)
+- before, after
+- placeholder text
+- dark mode
