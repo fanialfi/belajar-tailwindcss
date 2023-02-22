@@ -22,3 +22,7 @@
 - before, after
 - placeholder text
 - dark mode
+
+4 transform, transition, dan animation
+
+- 
