@@ -23,7 +23,7 @@
     <div class="m-5 mr-5 px-4 py-5 w-32 text-center text-xl">Margin</div>
     <div class="m-4 p-4 pr-0 w-1/2 text-center mx-auto text-xl">Padding</div>
   </section>
-  <section class="h-3/4 w-full p-4 bg-neutral-500 box-border">
+  <section class="h-3/4 w-full p-4 box-border">
     <h1 class="max-w-3xl p-8 m-4 text-center mx-auto text-5xl font-normal">
       Typography
     </h1>
@@ -175,33 +175,18 @@
   </div>
   <!-- bagian darking mode akhir -->
   <!-- transform, transition, animation awal -->
-  <hr class="my-20" />
-  <div
-    class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg  hover:rotate-180  hover:bg-pink-500 transition origin-top-left">
-  </div>
-
-  <div class="w-40 h-40  mx-auto mt-20 group">
+  <div class="w-40 h-40 mx-auto mt-20 group">
     <div
-      class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-1000">
+      class="w-full h-full mx-auto bg-sky-500 rounded-lg shadow-lg group-hover:scale-100 p-4 group-hover:-translate-y-4 group-hover:shadow-xl group-hover:shadow-slate-500 group-hover:rotate-180 group-hover:bg-pink-500 origin-top-left transition duration-300 delay-700">
+      FANI
     </div>
   </div>
 
-  <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang">
-  </div>
+  <div class="w-20 h-20 mx-auto rounded-lg bg-sky-600 mt-16 animate-spin hover:animate-none"></div>
+  <div class="w-20 h-20 mx-auto rounded-full bg-violet-600 animate-bounce"></div>
   <!-- transform, transition, animation akhir -->
   <div class="mb-96"></div>
-  <script>
-    const dark = document.querySelector("#dark");
-    const light = document.querySelector("#light");
-    const html = document.querySelector("html");
-
-    dark.addEventListener("click", function () {
-      html.classList.add("dark");
-    });
-    light.addEventListener("click", function () {
-      html.classList.remove("dark");
-    });
-  </script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

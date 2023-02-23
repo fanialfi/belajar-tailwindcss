@@ -564,11 +564,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -622,6 +617,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -666,6 +665,10 @@ video {
   height: 100%;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -705,6 +708,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .min-w-fit {
@@ -762,22 +769,35 @@ video {
   }
 }
 
-.animate-spin-slow {
-  animation: spin 3s linear infinite;
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
-@keyframes goyang {
-  0%,100% {
-    transform: rotate(-3deg);
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50% {
-    transform: rotate(3deg);
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
-.animate-goyang {
-  animation: goyang 1s ease-in-out infinite;
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
 .cursor-pointer {
@@ -835,16 +855,6 @@ video {
   background-color: rgb(207 0 255 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
-}
-
-.bg-pink-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
-}
-
 .bg-sky-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(125 211 252 / var(--tw-bg-opacity));
@@ -887,6 +897,11 @@ video {
 .bg-zinc-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.bg-violet-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 58 237 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br {
@@ -1258,12 +1273,12 @@ video {
   transition-duration: 150ms;
 }
 
-.delay-1000 {
-  transition-delay: 1000ms;
+.delay-700 {
+  transition-delay: 700ms;
 }
 
-.duration-1000 {
-  transition-duration: 1000ms;
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 #toggle:checked~label div.toggle-circle {
@@ -1313,14 +1328,8 @@ video {
   color: rgb(190 24 93 / var(--tw-text-opacity));
 }
 
-.hover\:rotate-180:hover {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:bg-pink-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+.hover\:animate-none:hover {
+  animation: none;
 }
 
 .hover\:bg-sky-600:hover {
@@ -1384,14 +1393,41 @@ video {
   visibility: visible;
 }
 
+.group:hover .group-hover\:-translate-y-4 {
+  --tw-translate-y: -1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.group:hover .group-hover\:scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.group:hover .group-hover\:shadow-slate-500 {
+  --tw-shadow-color: #64748b;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .peer:valid ~ .peer-valid\:invisible {
