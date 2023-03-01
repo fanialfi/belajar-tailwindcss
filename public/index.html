@@ -5,11 +5,6 @@
   <title>Belajar TailwindCSS</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Zeyada&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet" /> -->
   <link href="./src/main.css" rel="stylesheet" />
 </head>
 
@@ -185,6 +180,34 @@
   <div class="w-20 h-20 mx-auto rounded-lg bg-sky-600 mt-16 animate-spin hover:animate-none"></div>
   <div class="w-20 h-20 mx-auto rounded-full bg-violet-600 animate-bounce"></div>
   <!-- transform, transition, animation akhir -->
+  <!-- layouting awal -->
+  <hr class="my-20 border-t-4" />
+
+  <div class="container mx-auto">
+    <div class="border rounded-lg shadow-lg p-10 relative">
+      <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer">
+        <span class="text m-auto">X</span>
+      </div>
+      <img class="float-left mr-3" src="./src/img/image.jpeg" alt="image" width="150" />
+      <p>
+        Consectetur hic lorem aliquid sit reiciendis Delectus fugiat voluptate
+        ut voluptatem id doloribus Suscipit nesciunt velit quo aperiam quas
+        labore sunt. Non quod nihil vel recusandae eum! Quibusdam qui quos
+        voluptates deleniti soluta, modi officia at Quod sed nostrum ducimus
+        quo voluptatum, perferendis? Voluptates voluptate quis id nam possimus
+        tenetur
+      </p>
+    </div>
+  </div>
+  <div class="border rounded-lg shadow-lg p-10 container mx-auto mt-20 columns-3">
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+  </div>
+  <!-- layouting akhir -->
   <div class="mb-96"></div>
   <script src="./script.js"></script>
 </body>
