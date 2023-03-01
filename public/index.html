@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <title>Belajar TailwindCSS</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="./src/main.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body class="dark:bg-slate-800 dark:text-slate-200">
@@ -181,31 +183,37 @@
   <div class="w-20 h-20 mx-auto rounded-full bg-violet-600 animate-bounce"></div>
   <!-- transform, transition, animation akhir -->
   <!-- layouting awal -->
-  <hr class="my-20 border-t-4" />
-
-  <div class="container mx-auto">
-    <div class="border rounded-lg shadow-lg p-10 relative">
-      <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 -right-5 cursor-pointer">
-        <span class="text m-auto">X</span>
-      </div>
-      <img class="float-left mr-3" src="./src/img/image.jpeg" alt="image" width="150" />
-      <p>
-        Consectetur hic lorem aliquid sit reiciendis Delectus fugiat voluptate
-        ut voluptatem id doloribus Suscipit nesciunt velit quo aperiam quas
-        labore sunt. Non quod nihil vel recusandae eum! Quibusdam qui quos
-        voluptates deleniti soluta, modi officia at Quod sed nostrum ducimus
-        quo voluptatum, perferendis? Voluptates voluptate quis id nam possimus
-        tenetur
-      </p>
+  <div class="container border-4 rounded-lg p-2 relative">
+    <div class="w-8 h-8 bg-pink-700 hover:bg-pink-500 rounded-full flex fixed cursor-pointer bottom-8 right-4">
+      <a href="#" class="m-auto"><span class="text-xl material-symbols-outlined">navigation</span></a>
     </div>
+    <img src="http://source.unsplash.com/200x200" alt="image float" class="float-left mr-2" />
+    <p class="text-justify first-letter:text-6xl">
+      Elit culpa dolore corporis ab itaque? Ducimus consequuntur error fugiat
+      similique sequi. Enim tempore a soluta sequi molestias vitae Aspernatur
+      voluptas doloribus ut similique iusto? Expedita commodi dolore corrupti
+      expedita accusantium illum Saepe architecto ad earum hic reprehenderit.
+      Harum natus sapiente cumque eveniet corporis. Consequuntur omnis ullam
+      quia fugit quas repellendus Veritatis blanditiis eum ullam ut beatae,
+      voluptatum maiores Rerum amet culpa officiis sapiente officiis
+      recusandae Deleniti nesciunt quos atque qui nostrum Beatae facere
+      voluptatum eum repellat cumque harum. Accusantium.
+    </p>
+    <p class="clear-left">
+      Ipsum libero vero magnam repellendus esse nemo! Voluptate veritatis
+      magnam blanditiis expedita repudiandae natus Expedita eum distinctio
+      amet dolorum id possimus Deleniti vel maxime aspernatur molestias
+      voluptatum deleniti. Dolorem tempore.
+    </p>
   </div>
-  <div class="border rounded-lg shadow-lg p-10 container mx-auto mt-20 columns-3">
-    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
-    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
-    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
-    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
-    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
-    <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4" />
+
+  <div class="columns-3 container mt-4 border-4 gap-3">
+    <img src="http://source.unsplash.com/600x400" alt="image" class="w-64 mb-3 mx-auto" />
+    <img src="http://source.unsplash.com/600x400" alt="image" class="w-64 mb-3 mx-auto" />
+    <img src="http://source.unsplash.com/600x400" alt="image" class="w-64 mb-3 mx-auto" />
+    <img src="http://source.unsplash.com/600x400" alt="image" class="w-64 mb-3 mx-auto" />
+    <img src="http://source.unsplash.com/600x400" alt="image" class="w-64 mb-3 mx-auto" />
+    <img src="http://source.unsplash.com/600x400" alt="image" class="w-64 mb-3 mx-auto" />
   </div>
   <!-- layouting akhir -->
   <div class="mb-96"></div>
